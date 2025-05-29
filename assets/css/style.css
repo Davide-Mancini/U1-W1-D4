@@ -19,7 +19,7 @@ body{
     line-height: 1.5;
     padding: 25px;
     font-family: Poppins;
-    width: 45%;
+    width: 500px;
     margin-left: auto;
     margin-right: auto;
     background-image: url(img/sfondo.png);
@@ -29,12 +29,13 @@ body{
     padding: 10px;
    
 }
-,.listasidischi ul{
+.listasidischi ul{
     margin: 0;
 }
 /* HEADER */
 
 header{
+    box-shadow: 5px 5px 2px #595858; 
     box-sizing: border-box;
     text-align: center;
     width: 80%;
@@ -56,11 +57,14 @@ header ul>a{
 main h1{
     padding-top: 20px;
 }
-main{
+main{ box-shadow: 5px 5px 2px #595858;
+    box-sizing: border-box;
     padding-left: 10px;
+    margin-bottom: 10px;
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 5px;
     width:80%;
     text-align: left;
     background-color: white;
@@ -87,8 +91,12 @@ ol{
 
 }
 iframe{
-   padding-left: 25px;
-    width: 80%;
+    margin-left: 20px;
+    display: inline-block;
+    width: 90%;
+    height: 200px;
+  
+   
     border-radius:30px ;
 }
 /* TABELLE */
@@ -98,12 +106,12 @@ table caption{
 
 }
 .tabella{
-   
+   width: 80%;
     border-bottom:1px ;
     vertical-align: bottom;
     height: 200px;
     grid-template-columns: 1fr 1fr 1fr;
-    margin: 10px;
+    margin-left: 30px;
    
     border-style: solid;
     border-color: rgb(72, 106, 194);
@@ -112,7 +120,7 @@ tr:nth-child(even){
     background-color: rgb(242, 242, 242) ;
 }
 tr td{
-    
+    line-height: 2;
     text-align: center;
     vertical-align: middle;
 }
@@ -122,7 +130,8 @@ tr th{
     border-style: solid;
     border-color: white;
     padding: 7px;
-    text-align: center;
+    text-align:end;
+    color: white;
 }
 /* FORM */
 #bottoneblu{
@@ -153,7 +162,7 @@ tr th{
 }
 .soprafooter{
     text-align: center;
-    height: 100px;
+    height: 110px;
     background-color: rgb(226, 225, 226);
     margin: 10px;
 }
@@ -166,11 +175,13 @@ tr th{
 }
 .soprafooter span>p{
     text-align: right;
-    padding: 10px;
+    padding-bottom: 10px;
 }
 /* FOOTER */
 footer{
-    margin: auto;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
     width: 80%;
     background: #2A7B9B;
 background: linear-gradient(185deg, rgba(42, 123, 155, 1) 0%, rgba(41, 40, 40, 1) 100%);
